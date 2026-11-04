@@ -1,6 +1,6 @@
 [package]
 name = "deboa-multipart"
-version = "0.1.0-beta.1"
+version = "0.1.0"
 edition = "2024"
 authors = ["Rogerio Araújo <rogerio.araujo@gmail.com>"]
 repository = "https://github.com/deboa-client/deboa-multipart"
@@ -18,15 +18,13 @@ multi-threaded = []
 single-threaded = []
 
 [dependencies]
-async-lock = "3.4.2"
-async-stream = "0.3.6"
-base64 = { version = "0.23.0" }
+async-lock = "3.5"
+async-stream = "0.3"
 bytes = { version = "1.11" }
-deboa = { version = "0.1.5-beta.7" }
+deboa = { version = "0.1.5" }
 futures = { version = "0.3.31", default-features = false }
 http-body = "1"
-http-body-util = "0.1"
-rand = { version = "0.10.1", default-features = false, features = [
+rand = { version = "0.10", default-features = false, features = [
     "std",
     "thread_rng",
 ] }
@@ -37,9 +35,9 @@ macro_rules_attribute = { version = "0.2.2", default-features = false }
 smol = { version = "2.0.2", default-features = false }
 smol-macros = { version = "0.1.1", default-features = false }
 tempfile = "3.27.0"
-tokio = { version = "1.53.2", features = [
+tokio = { version = "1.54", features = [
     "fs",
     "macros",
     "rt-multi-thread",
 ], default-features = false }
-tokio-util = { version = "0.7.20", features = ["io"], default-features = false }
+tokio-util = { version = "0.7", features = ["io"], default-features = false }
